@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pour Lin · Mon Amour 🐝</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐝</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Canvas for floating bees and golden pollen sparkles -->
+  <canvas id="beeCanvas"></canvas>
+
+  <!-- Interactive Flying Bees Overlay Container -->
+  <div id="beesContainer"></div>
+
+  <!-- Opening Curtain / Modal to satisfy mobile browser audio autoplay policy -->
+  <div id="introOverlay" class="intro-overlay">
+    <div class="envelope-card">
+      <div class="honey-badge">🍯 ✨ 🐝</div>
+      <h1 class="intro-title">Une petite surprise pour toi</h1>
+      <p class="intro-subtitle">Pour <strong>Lin</strong>, ma chérie, mon amour...</p>
+      
+      <div class="wax-seal-button" id="openSurpriseBtn">
+        <span class="wax-seal-icon">🐝</span>
+        <span class="wax-seal-text">Ouvrir mon cœur</span>
+      </div>
+      <p class="intro-hint">✨ Mets un peu de musique et laisse la magie opérer...</p>
+    </div>
+  </div>
+
+  <!-- Main Website Container -->
+  <main class="main-wrapper" id="mainContent">
+    
+    <!-- Hero Header -->
+    <header class="hero-section">
+      <div class="floating-tag">
+        <span class="pulse-dot"></span> Pour la plus belle étoile de ma vie
+      </div>
+      <h1 class="hero-name">Lin</h1>
+      <p class="hero-petnames">Ma chérie · Mon amour · Mon bébé</p>
+    </header>
+
+    <!-- Distance & Connection Card -->
+    <section class="romantic-card distance-card">
+      <div class="card-header-badge">
+        <span class="badge-icon">✈️</span> Les Deux Mondes
+      </div>
+
+      <div class="cities-connection">
+        <div class="city-box">
+          <div class="flag-circle">🇬🇹</div>
+          <h3>Ciudad de Guatemala</h3>
+          <p class="city-sub">Là où je pense à toi</p>
+        </div>
+
+        <div class="connection-line-wrapper">
+          <div class="connection-line">
+            <div class="flying-mini-bee">🐝</div>
+          </div>
+          <span class="distance-tag">9 286 km</span>
+        </div>
+
+        <div class="city-box">
+          <div class="flag-circle">🇫🇷</div>
+          <h3>Roanne</h3>
+          <p class="city-sub">Là où bat ton cœur</p>
+        </div>
+      </div>
+
+      <p class="quote-text">
+        « La distance sépare nos corps, mais jamais nos âmes. Chaque kilomètre me rappelle à quel point tu es précieuse. »
+      </p>
+    </section>
+
+    <!-- Special Date & Counter -->
+    <section class="romantic-card counter-card">
+      <div class="card-header-badge">
+        <span class="badge-icon">📅</span> Notre Histoire
+      </div>
+
+      <h2 class="counter-title">Depuis le 30 Juin</h2>
+      <p class="counter-subtitle">Chaque jour à t'aimer est un cadeau précieux...</p>
+
+      <div class="countdown-grid" id="loveTimer">
+        <div class="time-item">
+          <span class="time-number" id="daysCount">0</span>
+          <span class="time-label">Jours</span>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-item">
+          <span class="time-number" id="hoursCount">00</span>
+          <span class="time-label">Heures</span>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-item">
+          <span class="time-number" id="minsCount">00</span>
+          <span class="time-label">Minutes</span>
+        </div>
+        <div class="time-sep">:</div>
+        <div class="time-item">
+          <span class="time-number" id="secsCount">00</span>
+          <span class="time-label">Secondes</span>
+        </div>
+      </div>
+
+      <div class="bee-honey-quote">
+        <span class="quote-bee">🐝</span>
+        <span>« Tu es comme le miel le plus doux dans ma vie. »</span>
+      </div>
+    </section>
+
+    <!-- Romantic Love Letter Card -->
+    <section class="romantic-card letter-card">
+      <div class="letter-top-seal">
+        <div class="golden-seal">❤️</div>
+      </div>
+
+      <div class="letter-content">
+        <h2 class="letter-salutation">Ma douce Lin,</h2>
+        
+        <p class="letter-paragraph highlight-text">
+          Je t'aime tellement.
+        </p>
+
+        <p class="letter-paragraph">
+          Tu es l'étoile qui fait briller mon âme, amour mien. À travers la distance, à travers chaque fuseau horaire, ta lumière est ce qui réchauffe toutes mes journées.
+        </p>
+
+        <p class="letter-paragraph">
+          Ma vie avec toi est tout simplement géniale et merveilleuse, mon bébé ! Tu as apporté avec toi une douceur infinie, des sourires que je n'échangerais pour rien au monde.
+        </p>
+
+        <p class="letter-paragraph">
+          Merci du plus profond de mon cœur d'exister et d'être dans ma vie... et je te promets que <strong>je t'aimerai quoi qu'il arrive</strong>.
+        </p>
+
+        <div class="letter-signature">
+          <p class="sig-close">Pour toujours à toi,</p>
+          <p class="sig-name">Ton amour 🇬🇹 ❤️ 🇫🇷</p>
+        </div>
+      </div>
+
+      <!-- Kiss button for heart explosion -->
+      <div class="kiss-action">
+        <button id="sendKissBtn" class="kiss-btn">
+          <span>Envoyer un baiser volant</span>
+          <span class="kiss-emoji">💋</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- WhatsApp Response Section -->
+    <section class="romantic-card feedback-card">
+      <p class="feedback-text">Tu as aimé ta petite surprise ?</p>
+      <a 
+        id="whatsappLink"
+        href="https://wa.me/?text=Mon%20amour%2C%20j%27ai%20ador%C3%A9%20ta%20surprise%20%21%20Tu%20es%20le%20meilleur%2C%20je%20t%27aime%20tellement%20%F0%9F%90%9D%E2%9D%A4%EF%B8%8F" 
+        target="_blank" 
+        class="whatsapp-btn"
+      >
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.979-.276-.101-.477-.15-.678.15-.201.3-.778.979-.954 1.18-.175.201-.351.226-.652.075-.3-.15-1.267-.467-2.413-1.489-.892-.796-1.494-1.78-1.669-2.08-.176-.3-.019-.462.132-.612.136-.135.301-.351.452-.527.15-.175.201-.3.301-.501.1-.201.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.492-.508-.678-.518l-.578-.01c-.201 0-.527.075-.803.376s-1.054 1.03-1.054 2.513 1.079 2.914 1.23 3.115c.15.201 2.123 3.242 5.143 4.545.719.31 1.28.495 1.718.634.722.23 1.378.197 1.898.12.579-.086 1.782-.728 2.033-1.431.251-.703.251-1.306.176-1.431-.076-.125-.276-.201-.577-.351z"/>
+        </svg>
+        <span>Dis-le moi sur WhatsApp ❤️</span>
+      </a>
+    </section>
+
+    <!-- Bottom Spacing for Floating Player -->
+    <div style="height: 120px;"></div>
+  </main>
+
+  <!-- Sticky Music Player Widget -->
+  <div class="music-player-bar" id="musicPlayer">
+    <audio id="mainAudio" preload="auto"></audio>
+
+    <div class="player-inner">
+      <!-- Vinyl / Cover art -->
+      <div class="player-cover-wrap" id="playerCoverWrap">
+        <img id="trackCover" src="covers/honeybee.jpg" alt="Cover" class="track-cover" />
+        <div class="vinyl-center-dot"></div>
+      </div>
+
+      <!-- Track Info -->
+      <div class="player-info" id="playerInfoToggle">
+        <div class="track-title-marquee">
+          <span id="trackTitle" class="track-title">honeybee</span>
+        </div>
+        <span id="trackArtist" class="track-artist">Olivia Rodrigo</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="player-controls">
+        <button id="prevBtn" class="ctrl-btn" title="Chanson précédente">
+          <svg viewBox="0 0 24 24"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
+        </button>
+
+        <button id="playPauseBtn" class="play-btn" title="Lecture / Pause">
+          <svg id="playIcon" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg id="pauseIcon" viewBox="0 0 24 24" style="display: none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+
+        <button id="nextBtn" class="ctrl-btn" title="Chanson suivante">
+          <svg viewBox="0 0 24 24"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+        </button>
+
+        <button id="playlistToggleBtn" class="playlist-btn" title="Notre Playlist">
+          <svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-container" id="progressContainer">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <!-- Playlist Modal / Drawer -->
+  <div class="playlist-drawer" id="playlistDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title-wrap">
+        <span class="drawer-emoji">🐝 🎵</span>
+        <h3>Nos Chansons Spéciales</h3>
+      </div>
+      <button id="closeDrawerBtn" class="close-drawer-btn">&times;</button>
+    </div>
+    
+    <div class="playlist-items" id="playlistItems">
+      <!-- Items generated dynamically via JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
