@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   const playlist = [
     {
-      id: "honeybee",
-      title: "honeybee",
-      artist: "Olivia Rodrigo",
-      src: "music/honeybee.mp3",
-      cover: "covers/honeybee.jpg"
+      id: "cant_help_falling_in_love",
+      title: "Can't Help Falling in Love",
+      artist: "André Rieu",
+      src: "music/cant_help_falling_in_love.mp3",
+      cover: "covers/cant_help_falling_in_love.jpg"
     },
     {
       id: "roi",
@@ -43,13 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
       artist: "The Ronettes",
       src: "music/be_my_baby.mp3",
       cover: "covers/be_my_baby.jpg"
-    },
-    {
-      id: "cant_help_falling_in_love",
-      title: "Can't Help Falling in Love",
-      artist: "André Rieu",
-      src: "music/cant_help_falling_in_love.mp3",
-      cover: "covers/cant_help_falling_in_love.jpg"
     },
     {
       id: "strangers_in_the_night",
